@@ -1,0 +1,7 @@
+1. 해당폴더의 2019-04-xxxxx.log 파일을 MACHCOLLECTOR_HOME/collector/advantech 폴더로 옮긴다. (없으면 생성한다)
+2. 해당폴더의 advantech.rgx 파일을 MACHCOLLECTOR_HOME/collector/regex 폴더로 옮긴다.
+3. 해당폴더의 advantech.tpl 파일을 MACHCOLLECTOR_HOME/collector/ 폴더로 옮긴다.
+
+4. Machbase Advantech Case 폴더에서 Machsql 실행
+5. machsql에서 !1_machcollector_start.bat  타이핑
+6. machsql에서 @2_advantech.sql 타이핑

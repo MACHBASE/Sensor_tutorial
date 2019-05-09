@@ -14,10 +14,10 @@ insert into tag metadata values ('RSSI');
 insert into tag metadata values ('SNR');
 
 
-exec stream_create(event1, 'insert into tag select ''TEMPERATURE'', TIME, TEMPERATURE from advantech_table;');
-exec stream_create(event2, 'insert into tag select ''HUMIDITY'', TIME, HUMIDITY from advantech_table;');
-exec stream_create(event3, 'insert into tag select ''RSSI'', TIME, RSSI from advantech_table;');
-exec stream_create(event4, 'insert into tag select ''SNR'', TIME, SNR from advantech_table;');
+exec stream_create(event1, 'insert into tag select ''TEMPERATURE'', TIME, TEMPERATURE from advantech_table');
+exec stream_create(event2, 'insert into tag select ''HUMIDITY'', TIME, HUMIDITY from advantech_table');
+exec stream_create(event3, 'insert into tag select ''RSSI'', TIME, RSSI from advantech_table');
+exec stream_create(event4, 'insert into tag select ''SNR'', TIME, SNR from advantech_table');
 
 exec stream_start(event1);
 exec stream_start(event2);
